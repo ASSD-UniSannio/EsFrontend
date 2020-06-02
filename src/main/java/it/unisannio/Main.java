@@ -33,6 +33,9 @@ public class Main {
                     case "GET":
                         builder.GET();
                     break;
+                    case "PUT":
+                        builder.PUT(HttpRequest.BodyPublishers.ofString(request.getPostBody(request.getContentLength()).toStringContent()));
+                        break;
                     case "POST":
                         builder.POST(HttpRequest.BodyPublishers.ofString(request.getPostBody(request.getContentLength()).toStringContent()));
                     break;
