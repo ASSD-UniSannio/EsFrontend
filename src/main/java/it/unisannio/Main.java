@@ -59,8 +59,6 @@ public class Main {
         }, "/api-v1/bank");
         try {
             server.start();
-            System.out.println("Press any key to stop the server...");
-            System.in.read();
         } catch (Exception e) {
             System.err.println(e);
         }
