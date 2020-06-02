@@ -14,7 +14,7 @@ RUN mkdir /app \
 
 WORKDIR /app
 
-ADD target/1.0-jar-with-dependencies.jar exgrizzly.jar
+ADD 1.0-jar-with-dependencies.jar exgrizzly.jar
 
 ENV APP_HOME /app
 
