@@ -79,12 +79,10 @@ public class Main {
         System.out.println(tokens[2]);
         switch (tokens[2]){
             case "accounts":
-                //endpoint = "http://" + System.getenv("ACCOUNT_HOST") + ":8080/Account-1.0/";
-                endpoint = "http://" + "localhost" + ":8080/Account-1.0/";
+                endpoint = "http://" + System.getenv("ACCOUNT_HOST") + ":8080/Account-1.0/";
             break;
             case "customers":
                 endpoint = "http://" + System.getenv("CUSTOMER_HOST") + ":8080/Customer-1.0/";
-                //endpoint = "http://" + "localhost" + ":8080/Customer-1.0/";
             break;
         }
         return endpoint;
