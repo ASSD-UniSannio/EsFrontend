@@ -59,6 +59,7 @@ public class Main {
         }, "/api-v1/bank");
         try {
             server.start();
+            System.in.read();
         } catch (Exception e) {
             System.err.println(e);
         }
