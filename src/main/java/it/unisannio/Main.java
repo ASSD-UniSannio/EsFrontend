@@ -79,8 +79,8 @@ public class Main {
         System.out.println(tokens[2]);
         switch (tokens[2]){
             case "accounts":
-                endpoint = "http://" + System.getenv("ACCOUNT_HOST") + ":8080/Account-1.0/";
-                //endpoint = "http://" + "localhost" + ":8080/Account-1.0/";
+                //endpoint = "http://" + System.getenv("ACCOUNT_HOST") + ":8080/Account-1.0/";
+                endpoint = "http://" + "localhost" + ":8080/Account-1.0/";
             break;
             case "customers":
                 endpoint = "http://" + System.getenv("CUSTOMER_HOST") + ":8080/Customer-1.0/";
@@ -108,7 +108,7 @@ public class Main {
         for(String name: paramNames) {
             String[] values = request.getParameterMap().get(name);
             for (int i= 0; i < values.length; i++ )
-                params.append(name+"="+values[i]);
+                params.append(name+"="+values[i]+"&");
         }
         System.out.println(params.toString());
         return params.toString();
