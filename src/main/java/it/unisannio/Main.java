@@ -59,9 +59,7 @@ public class Main {
         }, "/api-v1/bank");
         try {
             server.start();
-            while (true){
-
-            }
+            Thread.currentThread().suspend();
         } catch (Exception e) {
             System.err.println(e);
         }
